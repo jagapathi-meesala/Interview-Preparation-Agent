@@ -1,0 +1,13 @@
+name: generate-practice-questions
+description: Generate deterministic practice questions from supplied topics and question types.
+input_schema:
+  type: object
+  properties:
+    topics:
+      type: array
+      items: {type: string}
+    question_types:
+      type: array
+      items: {type: string}
+  required: [topics, question_types]
+  additionalProperties: false

@@ -1,0 +1,22 @@
+spec_version: "0.1.0"
+name: interview-preparation-agent
+version: 1.0.0
+description: A framework-independent agent for structured interview preparation using caller-provided role, skills, and preparation data.
+author: Agent Passport Project
+license: MIT
+skills:
+  - interview-planning
+  - question-practice
+  - answer-review
+tools:
+  - create-interview-plan
+  - generate-practice-questions
+  - review-interview-answer
+runtime:
+  max_turns: 20
+  timeout: 120
+tags:
+  - interview
+  - preparation
+  - career
+  - practice

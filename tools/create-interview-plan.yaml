@@ -1,0 +1,14 @@
+name: create-interview-plan
+description: Create a structured interview preparation plan from supplied role, skills, and topics.
+input_schema:
+  type: object
+  properties:
+    role: {type: string}
+    skills:
+      type: array
+      items: {type: string}
+    topics:
+      type: array
+      items: {type: string}
+  required: [role, skills, topics]
+  additionalProperties: false

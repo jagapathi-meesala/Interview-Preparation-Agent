@@ -1,0 +1,12 @@
+name: review-interview-answer
+description: Review a supplied interview answer against explicit criteria.
+input_schema:
+  type: object
+  properties:
+    question: {type: string}
+    answer: {type: string}
+    criteria:
+      type: array
+      items: {type: string}
+  required: [question, answer, criteria]
+  additionalProperties: false
